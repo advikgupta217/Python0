@@ -34,3 +34,16 @@ print(empty_dict)
 #(You can take help of built-in data types) {9,9.0}
 
 values = {9, 9.0}
+print(values) #This only prints 9, as both have same hash value
+
+values1 = {9, "9.0"}
+print(values1)
+#or
+values2 = {"9.0", 9}
+print(values2)
+#or
+value = {
+    ("float", 9.0)
+    ("int", 9)
+}
+print(value)
