@@ -26,9 +26,9 @@ print(info["marks"])
 #This will print accessable values from the dictionary 'info'
 #print(info["surname"]), as surname does not exists as key in dictionary therefore this will create an error
 
-#To assign something new
+#To assign someone something else
 info["name"] = "Bruno" #overwrite
-info["surname"] = "Gupta" 
+info["surname"] = "Gupta" #This will add a new key/value pair
 print(info)
 
 #Empty Dictionary
@@ -153,3 +153,5 @@ print(set2) #origin values will be retained
 
 #Intersection method
 print(set1.intersection(set2)) #{3}
+
+## End of Lecture ##
