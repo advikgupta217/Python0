@@ -1,0 +1,143 @@
+#Loops in Python(While & For Loops)
+#To print "Hello" many times
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello") #...and so on
+#To ignore so many lines we use loop
+
+#While loop(jab tk)
+# while True : 
+#   print("Hello")
+# True is always true therefore this will print Hello infinite times
+
+count = 1
+while count <= 5 : 
+    print("Hello")
+    count += 1 #or count = count + 1
+
+#Until and unless the the condition is true the loop will keep giving an output, therefore generally we consider a variable(Iterators and Iteration), Iteration -> Looping
+iterator = 1
+while iterator <= 5 :
+    print("Python", iterator)
+    iterator += 1
+
+#Print numbers 1 to 5
+i = 1
+while i < 5 :
+    print(i)
+    i += 1
+
+print("End of loop")
+
+#Print numbers 5 to 1
+i1 = 5
+while i1 >= 1 :
+    print(i1)
+    i1 -= 1
+
+#Break & Continue
+#Break : Used to terminate the loop when encountered
+#Continue : Terminates execution in the current iteration & continues execution of the loop with the next iteration.
+n = 1
+while n <= 5:
+    print(n)
+    if(n==3):
+        break #Terminates the program here
+    n += 1
+
+print("End of loop")
+
+m = 0
+while m <= 5:
+    if(m == 3):
+        m += 1
+        continue #Continue acts as skip for current iteration
+    print(m)
+    m += 1
+
+#To print only odd integers from 1-10
+o = 0
+while o <= 10:
+    if(o % 2 == 0):
+        o += 1
+        continue #skip
+    print(o)
+    o += 1
+
+
+#For Loop(Generally used for sequential traversal, for list, string, tuples etc)
+
+nums = [1, 2, 3, 4, 5] #list with int
+for val in nums:
+    print(val) #We'll get the numbers not with index
+
+veggies = ["potato", "brinjal", "ladyfinger", "cucumber"] #list with str
+for val in veggies:
+    print(val)
+
+tup1 = (1, 2, 3, 4, 2, 8, 9) #tuple
+for num in tup1:
+    print(num)
+
+#For loop with else (Can be used when we use break)
+
+str = "Advik Gupta" #str
+for character in str:
+    print(character)
+else:
+    print("END")
+
+str1 = "Bruno Gupta" 
+for char in str1:
+    if (char == 'o'):
+        print("o found")
+        break
+    print(char)
+else:         #else statement will not be executed after o is found
+    print("END")
+print("END") #else wala kaam break wale cases ke andar execute nahi hoga
+
+
+#Range() - returns a sequence of numbers, starting from 0 by default, and increments by 1(by default), and stops before a specified number.
+#range(start?, stop, step?), step size is increment size(by def. 1)
+#start? and step? are optional values to give
+
+print(range(5))
+
+seq = range(5)
+print(seq[0])
+print(seq[1])
+print(seq[2])
+print(seq[3])
+
+for i in seq:
+    print(i) #Prints all in the integer value in range[0, x)
+
+#(start?, stop, step?)
+for i in range(10): #Here 10 is the stopping value
+    print(i)
+
+for i in range(2, 10): #Here the loop starts from 2 and ends at 9
+    print(i)
+
+for i in range(2, 10, 2): #Here the loop starts from 2 and ends at 8, with a step size of 2
+    print(i)
+
+#If you have to print all even numbers from 1-100
+for i in range(2, 101, 2):
+    print(i)
+
+#For odd numbers
+for i in range(1, 101, 2):
+    print(i)
+
+
+#Pass statement - Null statement that does nothing, used as a placeholder for future code.
+for i in range(5):
+    pass #empty
+
+if i > 5:
+    pass #can be used in if-elif-else conditions
+print("Some useful work")
