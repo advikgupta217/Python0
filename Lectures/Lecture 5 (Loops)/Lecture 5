@@ -141,3 +141,5 @@ for i in range(5):
 if i > 5:
     pass #can be used in if-elif-else conditions
 print("Some useful work")
+
+## End of lecture ##

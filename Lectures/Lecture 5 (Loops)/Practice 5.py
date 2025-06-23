@@ -65,7 +65,7 @@ idx = 0
 
 for el in list2:
     if(el == y):
-        print("number found at idx", idx )
+        print("number found at idx", idx)
     idx += 1
 print("")
 
@@ -117,7 +117,7 @@ while i <= facto:
 print("Factorial =", facto1)
 
 #Alternative(For)
-fact = int(input("Enter a value for factorial"))
+fact = int(input("Value for factorial = "))
 fact1 = 1
 for i in range(1, n+1):
     fact1 *= i

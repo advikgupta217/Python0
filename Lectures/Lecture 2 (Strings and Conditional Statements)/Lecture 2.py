@@ -86,7 +86,7 @@ else:
 
 print("end of code")
 
-#Another example - Program to check if the number is greater than 2/3
+#Another example - Program to check if the number is greater than 2 or 3
 num = 5
 
 if(num > 2):
@@ -133,5 +133,3 @@ if(age2 >= 18):
         print("Can vote")
 else:
     print("Cannot vote")
-
- 
