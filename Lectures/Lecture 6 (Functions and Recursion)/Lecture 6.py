@@ -1,4 +1,4 @@
-# #Functions in Python → Block of statements that performs a specific task
+# Functions in Python → Block of statements that performs a specific task
 # 		def func_name(param1, param2..)
 # 			#some work
 # 			return val
@@ -94,3 +94,5 @@ def fact(n): #n! = (n-1)! x n
         return 1
     return fact(n-1) * n
 print(fact(4))
+
+## End of lecture ##
