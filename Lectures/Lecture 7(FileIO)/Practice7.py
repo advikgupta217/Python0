@@ -44,8 +44,3 @@ def check_for_line():
     return(-1)
 
 check_for_line()
-
-#From a file containing numbers seperated by comma, print the count of even numbers.
-with open("practice1.txt", "r") as f:
-    data = f.read()
-    print(data)
