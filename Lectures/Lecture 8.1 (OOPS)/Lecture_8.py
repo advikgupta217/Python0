@@ -45,7 +45,7 @@ print(s1.name)
 
 #The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
 
-class Student:
+class Student: 
     name = "Advik"
     def __init__(self): #Constructor always uses a parameter(self)
         print("Adding new student in database..")
@@ -130,7 +130,7 @@ print(s4.college_name)
 class Student:
     
     @staticmethod #decorator - class level
-    def hello():
+    def hello(): # No use of self parameter
         print("Hello")
 
     def __init__(self, name):
@@ -160,4 +160,4 @@ car1.start() #Here acc, brk and clutch are unecessary for the driver therefore t
 
 #(2) Encapsulation - Wrapping data and functions into a single unit/capsule(object), Capsule of data + related functions in a single unit.
 
-##End of Lecture##
+## End of Lecture ##
