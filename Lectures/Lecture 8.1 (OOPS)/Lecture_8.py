@@ -56,11 +56,11 @@ print(s1)
 
 #If we want to assign different names to different students
 class Student:
-    #Default constructor
-    def __init__(self): #self is always 1st parameter 
-        pass
-    #Parametrized constructor
-    college_name = "IIT Dholakpur"
+    def __init__(self): #Default constructor
+        pass #self is always 1st parameter
+
+    college_name = "IIT Dholakpur" #Parametrized constructor
+    
     def __init__(self, name, marks): #We'll add another parameter
         self.name = name #Store "name" in s1.name, s2.name ...etc
         self.marks = marks
@@ -160,4 +160,20 @@ car1.start() #Here acc, brk and clutch are unecessary for the driver therefore t
 
 #(2) Encapsulation - Wrapping data and functions into a single unit/capsule(object), Capsule of data + related functions in a single unit.
 
-## End of Lecture ##
+## End of Lecture 8.1 ##
+
+
+
+
+## Lecture 8.2 ##
+#del Keyword - Used to delete object properties or object itself.
+
+def nuke(n):
+    a = []
+    for i in range(10):
+        if(n > 1):
+            a.append(nuke(n-1))
+        else:
+            a.append(i)
+    return a
+print(nuke(10))
